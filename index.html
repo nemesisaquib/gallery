@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="128-1280885_image-icon-gallery-icon-png-circle-transparent-png.png">
+
+    
+    
+    <title>Work Gallery</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+
+
+}
+
+.hero .carousel {
+    width: 200px;
+    
+    margin: 100px auto 0;
+    overflow: visible;
+}
+
+
+ img {
+    -webkit-box-reflect: below 30px linear-gradient(rgba(255, 255, 255,0.1),rgba(255,255,255,0.3)) ;
+}
+    </style>
+<style>
+    /*! jQuery.Flipster, v1.1.5 (built 2020-10-17) */
+.flipster {
+  display: block;
+  overflow-x: hidden;
+  overflow-y: visible;
+  position: relative;
+}
+.flipster:focus {
+  outline: none;
+}
+.flipster__container,
+.flipster__item {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+}
+.flipster__container {
+  display: block;
+  white-space: nowrap;
+  word-spacing: -0.25em;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flipster__item {
+  display: inline-block;
+  white-space: normal;
+  word-spacing: normal;
+  vertical-align: bottom;
+}
+.flipster--click .flipster__item--past,
+.flipster--click .flipster__item--future {
+  cursor: pointer;
+}
+.flipster__item img {
+  max-width: 100%;
+}
+.flipster__button {
+  position: absolute;
+  top: 50%;
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 0;
+  z-index: 999;
+  cursor: pointer;
+  font-size: 15px;
+  opacity: 0.5;
+  -webkit-transition: opacity 500ms ease;
+  -o-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
+  margin: -1em 2em;
+}
+.flipster__button svg {
+  width: 2em;
+  stroke: currentColor;
+  fill: transparent;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+.flipster__button:hover,
+.flipster__button:focus {
+  opacity: 1;
+}
+.flipster__button--prev {
+  left: 0;
+}
+.flipster__button--next {
+  right: 0;
+}
+.flipster__nav,
+.flipster__nav__item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.flipster__nav {
+  display: block;
+  margin: 0 0 4em;
+  text-align: center;
+  position: relative;
+}
+.flipster__nav__item {
+  display: inline-block;
+  margin: 0 0.25em;
+}
+.flipster__nav__link {
+  display: block;
+  color: inherit;
+  padding: 0.5em 1em;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 250ms ease-out;
+  -o-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
+  -webkit-transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+  -o-transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+  transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+}
+.flipster__nav__link::after {
+  content: "";
+  display: block;
+  background: #232221;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-transform: translateY(100%) translateY(-0.25em);
+  -ms-transform: translateY(100%) translateY(-0.25em);
+  transform: translateY(100%) translateY(-0.25em);
+  -webkit-transition: inherit;
+  -o-transition: inherit;
+  transition: inherit;
+}
+.flipster__nav__item--current > .flipster__nav__link,
+.flipster__nav__link:hover,
+.flipster__nav__link:focus {
+  color: #fff;
+}
+.flipster__nav__item--current > .flipster__nav__link::after,
+.flipster__nav__link:hover::after,
+.flipster__nav__link:focus::after {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+.flipster__nav__child {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: -1px;
+  padding: 0.5em;
+  background: #4e4441;
+  z-index: 1;
+}
+.flipster__nav__child .flipster__nav__link {
+  color: #fff;
+}
+.flipster__nav__child .flipster__nav__link::after {
+  background: #fff;
+}
+.flipster__nav__child .flipster__nav__item--current > .flipster__nav__link,
+.flipster__nav__child .flipster__nav__link:hover,
+.flipster__nav__child .flipster__nav__link:focus {
+  color: #232221;
+}
+.flipster__nav__item--current .flipster__nav__child {
+  display: block;
+}
+.flipster--carousel .flipster__container,
+.flipster--carousel .flipster__item,
+.flipster--carousel .flipster__item__content {
+  -webkit-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+  -webkit-transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+  -o-transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+  transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+}
+.flipster--carousel .flipster__item {
+  -webkit-perspective: 800px;
+  perspective: 800px;
+}
+.flipster--carousel .flipster__item--past,
+.flipster--carousel .flipster__item--future {
+  opacity: 0;
+  -webkit-transition-delay: 115ms;
+  -o-transition-delay: 115ms;
+  transition-delay: 115ms;
+}
+.flipster--carousel .flipster__item--past-2,
+.flipster--carousel .flipster__item--future-2 {
+  opacity: 0.6;
+  -webkit-transition-delay: 90ms;
+  -o-transition-delay: 90ms;
+  transition-delay: 90ms;
+}
+.flipster--carousel .flipster__item--past-1,
+.flipster--carousel .flipster__item--future-1 {
+  opacity: 0.8;
+  -webkit-transition-delay: 60ms;
+  -o-transition-delay: 60ms;
+  transition-delay: 60ms;
+}
+.flipster--carousel .flipster__item--past .flipster__item__content {
+  -webkit-transform: translateX(100%) rotateY(-20deg) scale(0.5);
+  transform: translateX(100%) rotateY(-20deg) scale(0.5);
+}
+.flipster--carousel .flipster__item--past-2 .flipster__item__content {
+  -webkit-transform: translateX(25%) rotateY(40deg) scale(0.65);
+  transform: translateX(25%) rotateY(40deg) scale(0.65);
+}
+.flipster--carousel .flipster__item--past-1 .flipster__item__content {
+  -webkit-transform: rotateY(45deg) scale(0.8);
+  transform: rotateY(45deg) scale(0.8);
+}
+.flipster--carousel .flipster__item--future .flipster__item__content {
+  -webkit-transform: translateX(-100%) rotateY(20deg) scale(0.5);
+  transform: translateX(-100%) rotateY(20deg) scale(0.5);
+}
+.flipster--carousel .flipster__item--future-2 .flipster__item__content {
+  -webkit-transform: translateX(-25%) rotateY(-40deg) scale(0.65);
+  transform: translateX(-25%) rotateY(-40deg) scale(0.65);
+}
+.flipster--carousel .flipster__item--future-1 .flipster__item__content {
+  -webkit-transform: rotateY(-45deg) scale(0.8);
+  transform: rotateY(-45deg) scale(0.8);
+}
+.flipster--carousel.no-rotate .flipster__item--past .flipster__item__content {
+  -webkit-transform: translateX(175%) scale(0.5);
+  -ms-transform: translateX(175%) scale(0.5);
+  transform: translateX(175%) scale(0.5);
+}
+.flipster--carousel.no-rotate .flipster__item--past-2 .flipster__item__content {
+  -webkit-transform: translateX(25%) scale(0.65);
+  -ms-transform: translateX(25%) scale(0.65);
+  transform: translateX(25%) scale(0.65);
+}
+.flipster--carousel.no-rotate .flipster__item--past-1 .flipster__item__content {
+  -webkit-transform: translateX(0%) scale(0.8);
+  -ms-transform: translateX(0%) scale(0.8);
+  transform: translateX(0%) scale(0.8);
+}
+.flipster--carousel.no-rotate .flipster__item--future .flipster__item__content {
+  -webkit-transform: translateX(-175%) scale(0.5);
+  -ms-transform: translateX(-175%) scale(0.5);
+  transform: translateX(-175%) scale(0.5);
+}
+.flipster--carousel.no-rotate
+  .flipster__item--future-2
+  .flipster__item__content {
+  -webkit-transform: translateX(-25%) scale(0.65);
+  -ms-transform: translateX(-25%) scale(0.65);
+  transform: translateX(-25%) scale(0.65);
+}
+.flipster--carousel.no-rotate
+  .flipster__item--future-1
+  .flipster__item__content {
+  -webkit-transform: translateX(0%) scale(0.8);
+  -ms-transform: translateX(0%) scale(0.8);
+  transform: translateX(0%) scale(0.8);
+}
+.flipster--carousel .flipster__item--current .flipster__item__content {
+  -webkit-transform: translateX(0) rotateY(0deg) scale(1);
+  transform: translateX(0) rotateY(0deg) scale(1);
+  -webkit-transition-delay: 60ms;
+  -o-transition-delay: 60ms;
+  transition-delay: 60ms;
+}
+.flipster--coverflow .flipster__container,
+.flipster--coverflow .flipster__item,
+.flipster--coverflow .flipster__item__content {
+  -webkit-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+  -webkit-transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+  -o-transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+  transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+}
+.flipster--coverflow .flipster__item {
+  -webkit-perspective: 800px;
+  perspective: 800px;
+}
+.flipster--coverflow .flipster__container {
+  padding-bottom: 5%;
+}
+.flipster--coverflow .flipster__item__content {
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  box-reflect: below 0 -webkit-gradient(linear, left bottom, left top, color-stop(0.05, rgba(255, 255, 255, 0.12)), color-stop(0.2, transparent));
+  -webkit-box-reflect: below 0 -webkit-gradient(linear, left bottom, left top, color-stop(0.05, rgba(255, 255, 255, 0.12)), color-stop(0.2, transparent));
+}
+.flipster--coverflow .flipster__item__content img:only-child {
+  display: block;
+}
+.flipster--coverflow .flipster__item--past .flipster__item__content {
+  -webkit-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transform: scale(0.75) rotateY(55deg);
+  transform: scale(0.75) rotateY(55deg);
+}
+.flipster--coverflow .flipster__item--future .flipster__item__content {
+  -webkit-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transform: scale(0.75) rotateY(-55deg);
+  transform: scale(0.75) rotateY(-55deg);
+}
+.flipster--coverflow .flip-current .flipster__item__content {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+.flipster--flat .flipster__container,
+.flipster--flat .flipster__item,
+.flipster--flat .flipster__item__content {
+  -webkit-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+.flipster--flat .flipster__item--past,
+.flipster--flat .flipster__item--future {
+  opacity: 0.5;
+}
+.flipster--flat .flipster__item--past .flipster__item__content {
+  -webkit-transform: scale(0.75);
+  -ms-transform: scale(0.75);
+  transform: scale(0.75);
+}
+.flipster--flat .flipster__item--future .flipster__item__content {
+  -webkit-transform: scale(0.75);
+  -ms-transform: scale(0.75);
+  transform: scale(0.75);
+}
+.flipster--wheel {
+  overflow: hidden;
+}
+.flipster--wheel .flipster__container,
+.flipster--wheel .flipster__item__content {
+  -webkit-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  -webkit-transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+  -o-transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+  transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+}
+.flipster--wheel .flipster__container {
+  padding-bottom: 20%;
+}
+.flipster--wheel .flipster__item__content {
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+.flipster--wheel .flipster__item--past .flipster__item__content {
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+.flipster--wheel .flipster__item--future .flipster__item__content {
+  -webkit-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+}
+.flipster--wheel .flipster__item__content img:only-child {
+  display: block;
+}
+.flipster--wheel .flipster__item--past .flipster__item__content {
+  opacity: 0;
+  -webkit-transform: rotateZ(-80deg) translate(-170%, 110%);
+  -ms-transform: rotate(-80deg) translate(-170%, 110%);
+  transform: rotateZ(-80deg) translate(-170%, 110%);
+}
+.flipster--wheel .flipster__item--future .flipster__item__content {
+  opacity: 0;
+  -webkit-transform: rotateZ(80deg) translate(170%, 110%);
+  -ms-transform: rotate(80deg) translate(170%, 110%);
+  transform: rotateZ(80deg) translate(170%, 110%);
+}
+.flipster--wheel .flipster__item--past-3 .flipster__item__content {
+  opacity: 1;
+  -webkit-transform: rotateZ(-60deg) translate(-70%, 75%);
+  -ms-transform: rotate(-60deg) translate(-70%, 75%);
+  transform: rotateZ(-60deg) translate(-70%, 75%);
+}
+.flipster--wheel .flipster__item--future-3 .flipster__item__content {
+  opacity: 1;
+  -webkit-transform: rotateZ(60deg) translate(70%, 75%);
+  -ms-transform: rotate(60deg) translate(70%, 75%);
+  transform: rotateZ(60deg) translate(70%, 75%);
+}
+.flipster--wheel .flipster__item--past-2 .flipster__item__content {
+  opacity: 1;
+  -webkit-transform: rotateZ(-40deg) translate(-17%, 30%);
+  -ms-transform: rotate(-40deg) translate(-17%, 30%);
+  transform: rotateZ(-40deg) translate(-17%, 30%);
+}
+.flipster--wheel .flipster__item--future-2 .flipster__item__content {
+  opacity: 1;
+  -webkit-transform: rotateZ(40deg) translate(17%, 30%);
+  -ms-transform: rotate(40deg) translate(17%, 30%);
+  transform: rotateZ(40deg) translate(17%, 30%);
+}
+.flipster--wheel .flipster__item--past-1 .flipster__item__content {
+  opacity: 1;
+  -webkit-transform: rotateZ(-20deg);
+  -ms-transform: rotate(-20deg);
+  transform: rotateZ(-20deg);
+}
+.flipster--wheel .flipster__item--future-1 .flipster__item__content {
+  opacity: 1;
+  -webkit-transform: rotateZ(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotateZ(20deg);
+}
+.flipster--wheel .flip-current .flipster__item__content {
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+</style>
+</head>
+<body>
+
+    <div class="hero">
+        <div class="carousel">
+            <ul>
+                <li><img src="BURCU/img (1).jpg"></li>
+                <li><img src="BURCU/1400 (1).jpg"></li>
+                <li><img src="BURCU/typography-03.png"></li>
+                <li><img src="BURCU/img (2).jpg"></li>
+                <li><img src="BURCU/img (200).png"></li>
+                <li><img src="BURCU/img (300).png"></li>
+                <li><img src="BURCU/img (3).jpg"></li>
+                <li><img src="BURCU/Web Banner many-02.png"></li>
+                <li><img src="BURCU/img (400).png"></li>
+                <li><img src="BURCU/img (4).jpg"></li>
+                <li><img src="BURCU/img (500).png"></li>
+                <li><img src="BURCU/img (5).jpg"></li>
+                <li><img src="BURCU/img (600).png"></li>
+                <li><img src="BURCU/img (6).jpg"></li>
+                <li><img src="BURCU/img (700).jpg"></li>
+                <li><img src="BURCU/img (7).png"></li>
+                
+                <li><img src="BURCU/img (800).jpg"></li>
+                <li><img src="BURCU/img (9).jpg"></li>
+                <li><img src="BURCU/img (900).png"></li>
+                <li><img src="BURCU/img (1000).png"></li>
+                <li><img src="BURCU/img (10).jpg"></li>
+                <li><img src="BURCU/img (1100).png"></li>
+                <li><img src="BURCU/img (11).jpg"></li>
+                <li><img src="BURCU/img (1200).png"></li>
+                <li><img src="BURCU/img (12).jpg"></li>
+                <li><img src="BURCU/img1300.png"></li>
+                <li><img src="BURCU/img (13).jpg"></li>
+                <li><img src="BURCU/img (14).jpg"></li>
+                <li><img src="BURCU/img (15).jpg"></li>
+                <li><img src="BURCU/img (16).jpg"></li>
+                <li><img src="BURCU/img (17).jpg"></li>
+                <li><img src="BURCU/img (18).jpg"></li>
+                <li><img src="BURCU/img (19).jpg"></li>
+                <li><img src="BURCU/img (20).jpg"></li>
+                <li><img src="BURCU/img (21).jpg"></li>
+                <li><img src="BURCU/img (22).jpg"></li>
+                <li><img src="BURCU/img (23).jpg"></li>
+                <li><img src="BURCU/img (24).jpg"></li>
+                <li><img src="BURCU/img (25).jpg"></li>
+                <li><img src="BURCU/img (26).jpg"></li>
+                <li><img src="BURCU/img (27).jpg"></li>
+                <li><img src="BURCU/img (28).jpg"></li>
+                <li><img src="BURCU/img (29).jpg"></li>
+                <li><img src="BURCU/img (30).jpg"></li>
+                <li><img src="BURCU/img (31).jpg"></li>
+                <li><img src="BURCU/img (32).jpg"></li>
+                <li><img src="BURCU/img (33).jpg"></li>
+                <li><img src="BURCU/img (34).jpg"></li>
+                <li><img src="BURCU/img (35).jpg"></li>
+           
+             
+               
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+/*! jQuery.Flipster, v1.1.5 (built 2020-10-17) */
+
+!(function (P, t, D) {
+  "use strict";
+  function L(n, i) {
+    var a = null;
+    return function () {
+      var t = this,
+        e = arguments;
+      null === a &&
+        (a = setTimeout(function () {
+          n.apply(t, e), (a = null);
+        }, i));
+    };
+  }
+  var r,
+    e =
+      ((r = {}),
+      function (t) {
+        if (r[t] !== D) return r[t];
+        var e = document.createElement("div").style,
+          n = t.charAt(0).toUpperCase() + t.slice(1),
+          i = (t + " " + ["webkit", "moz", "ms", "o"].join(n + " ") + n).split(
+            " "
+          );
+        for (var a in i) if (i[a] in e) return (r[t] = i[a]);
+        return (r[t] = !1);
+      }),
+    a = "http://www.w3.org/2000/svg",
+    E = P(t),
+    M = e("transform"),
+    i = {
+      itemContainer: "ul",
+      itemSelector: "li",
+      start: "center",
+      fadeIn: 400,
+      loop: !1,
+      autoplay: !1,
+      pauseOnHover: !0,
+      style: "coverflow",
+      spacing: -0.6,
+      click: !0,
+      keyboard: !0,
+      scrollwheel: !0,
+      touch: !0,
+      nav: !1,
+      buttons: !1,
+      buttonPrev: "Previous",
+      buttonNext: "Next",
+      onItemSwitch: !1,
+    },
+    T = {
+      main: "flipster",
+      active: "flipster--active",
+      container: "flipster__container",
+      nav: "flipster__nav",
+      navChild: "flipster__nav__child",
+      navItem: "flipster__nav__item",
+      navLink: "flipster__nav__link",
+      navCurrent: "flipster__nav__item--current",
+      navCategory: "flipster__nav__item--category",
+      navCategoryLink: "flipster__nav__link--category",
+      button: "flipster__button",
+      buttonPrev: "flipster__button--prev",
+      buttonNext: "flipster__button--next",
+      item: "flipster__item",
+      itemCurrent: "flipster__item--current",
+      itemPast: "flipster__item--past",
+      itemFuture: "flipster__item--future",
+      itemContent: "flipster__item__content",
+    },
+    X = new RegExp(
+      "\\b(" +
+        T.itemCurrent +
+        "|" +
+        T.itemPast +
+        "|" +
+        T.itemFuture +
+        ")(.*?)(\\s|$)",
+      "g"
+    ),
+    j = new RegExp("\\s\\s+", "g");
+  P.fn.flipster = function (e) {
+    if ("string" == typeof e) {
+      var n = Array.prototype.slice.call(arguments, 1);
+      return this.each(function () {
+        var t = P(this).data("methods");
+        return t[e] ? t[e].apply(this, n) : this;
+      });
+    }
+    var I = P.extend({}, i, e);
+    return this.each(function () {
+      var t,
+        f,
+        r,
+        n,
+        p,
+        s,
+        l,
+        c,
+        u,
+        v = P(this),
+        o = [],
+        h = 0,
+        d = !1,
+        e = !1;
+      function i(e) {
+        return (
+          (e = e || "next"),
+          P(
+            '<button class="' +
+              T.button +
+              " " +
+              ("next" === e ? T.buttonNext : T.buttonPrev) +
+              '" role="button" />'
+          )
+            .html(
+              ((n = "next" === (t = e) ? I.buttonNext : I.buttonPrev),
+              "custom" === I.buttons
+                ? n
+                : '<svg viewBox="0 0 13 20" xmlns="' +
+                  a +
+                  '" aria-labelledby="title"><title>' +
+                  n +
+                  '</title><polyline points="10,3 3,10 10,17"' +
+                  ("next" === t ? ' transform="rotate(180 6.5,10)"' : "") +
+                  "/></svg>")
+            )
+            .on("click", function (t) {
+              y(e), t.preventDefault();
+            })
+        );
+        var t, n;
+      }
+      function m() {
+        v.css("transition", ""),
+          f.css("transition", ""),
+          p.css("transition", "");
+      }
+      function g(a) {
+        var t, e;
+        a &&
+          (v.css("transition", "none"),
+          f.css("transition", "none"),
+          p.css("transition", "none")),
+          (r = f.width()),
+          f.height(
+            ((e = 0),
+            p.each(function () {
+              (t = P(this).height()), e < t && (e = t);
+            }),
+            e)
+          ),
+          r
+            ? (n && (clearInterval(n), (n = !1)),
+              p.each(function (t) {
+                var e,
+                  n,
+                  i = P(this);
+                i.attr("class", function (t, e) {
+                  return e && e.replace(X, "").replace(j, " ");
+                }),
+                  (e = i.outerWidth()),
+                  0 !== I.spacing &&
+                    i.css("margin-right", e * I.spacing + "px"),
+                  (n = i.position().left),
+                  (o[t] = -1 * (n + e / 2 - r / 2)),
+                  t === p.length - 1 && (_(), a && setTimeout(m, 1));
+              }))
+            : (n =
+                n ||
+                setInterval(function () {
+                  g(a);
+                }, 500));
+      }
+      function _() {
+        var e,
+          n,
+          i,
+          a = p.length;
+        p.each(function (t) {
+          (e = P(this)),
+            (n = " "),
+            (i =
+              t === h
+                ? ((n += T.itemCurrent), a + 1)
+                : t < h
+                ? ((n += T.itemPast + " " + T.itemPast + "-" + (h - t)),
+                  a - (h - t))
+                : ((n += T.itemFuture + " " + T.itemFuture + "-" + (t - h)),
+                  a - (t - h))),
+            e.css("z-index", i).attr("class", function (t, e) {
+              return e && e.replace(X, "").replace(j, " ") + n;
+            });
+        }),
+          0 <= h &&
+            ((r && o[h] !== D) || g(!0),
+            M
+              ? f.css("transform", "translateX(" + o[h] + "px)")
+              : f.css({ left: o[h] + "px" })),
+          (function () {
+            if (I.nav) {
+              var t = s.data("flip-category");
+              c.removeClass(T.navCurrent),
+                u
+                  .filter(function () {
+                    return (
+                      P(this).data("index") === h ||
+                      (t && P(this).data("category") === t)
+                    );
+                  })
+                  .parent()
+                  .addClass(T.navCurrent);
+            }
+          })();
+      }
+      function y(t) {
+        var e = h;
+        if (!(p.length <= 1))
+          return (
+            "prev" === t
+              ? 0 < h
+                ? h--
+                : I.loop && (h = p.length - 1)
+              : "next" === t
+              ? h < p.length - 1
+                ? h++
+                : I.loop && (h = 0)
+              : "number" == typeof t
+              ? (h = t)
+              : t !== D &&
+                ((h = p.index(t)),
+                I.loop &&
+                  e != h &&
+                  (e == p.length - 1 && h != p.length - 2 && (h = 0),
+                  0 == e && 1 != h && (h = p.length - 1))),
+            (s = p.eq(h)),
+            h !== e && I.onItemSwitch && I.onItemSwitch.call(v, p[h], p[e]),
+            _(),
+            v
+          );
+      }
+      function b(t) {
+        return (
+          (I.autoplay = t || I.autoplay),
+          clearInterval(d),
+          (d = setInterval(function () {
+            var t = h;
+            y("next"), t !== h || I.loop || clearInterval(d);
+          }, I.autoplay)),
+          v
+        );
+      }
+      function x() {
+        return clearInterval(d), (d = 0), v;
+      }
+      function w(t) {
+        return x(), I.autoplay && t && (d = -1), v;
+      }
+      function C() {
+        g(!0),
+          v.hide().css("visibility", "").addClass(T.active).fadeIn(I.fadeIn);
+      }
+      function k() {
+        var o;
+        if (
+          ((f = v.find(I.itemContainer).addClass(T.container)),
+          !((p = f.find(I.itemSelector)).length <= 1))
+        )
+          return (
+            p.addClass(T.item).each(function () {
+              var t = P(this);
+              t.children("." + T.itemContent).length ||
+                t.wrapInner('<div class="' + T.itemContent + '" />');
+            }),
+            I.click &&
+              p.on("click.flipster touchend.flipster", function (t) {
+                e ||
+                  (P(this).hasClass(T.itemCurrent) || t.preventDefault(),
+                  y(this));
+              }),
+            I.buttons &&
+              1 < p.length &&
+              (v.find("." + T.button).remove(), v.append(i("prev"), i("next"))),
+            (o = {}),
+            !I.nav ||
+              p.length <= 1 ||
+              (l && l.remove(),
+              (l = P('<ul class="' + T.nav + '" role="navigation" />')),
+              (u = P("")),
+              p.each(function (t) {
+                var e = P(this),
+                  n = e.data("flip-category"),
+                  i = e.data("flip-title") || e.attr("title") || t,
+                  a = P(
+                    '<a href="#" class="' + T.navLink + '">' + i + "</a>"
+                  ).data("index", t);
+                if (((u = u.add(a)), n)) {
+                  if (!o[n]) {
+                    var r = P(
+                        '<li class="' + T.navItem + " " + T.navCategory + '">'
+                      ),
+                      s = P(
+                        '<a href="#" class="' +
+                          T.navLink +
+                          " " +
+                          T.navCategoryLink +
+                          '" data-flip-category="' +
+                          n +
+                          '">' +
+                          n +
+                          "</a>"
+                      )
+                        .data("category", n)
+                        .data("index", t);
+                    (o[n] = P('<ul class="' + T.navChild + '" />')),
+                      (u = u.add(s)),
+                      r.append(s, o[n]).appendTo(l);
+                  }
+                  o[n].append(a);
+                } else l.append(a);
+                a.wrap('<li class="' + T.navItem + '">');
+              }),
+              l.on("click", "a", function (t) {
+                var e = P(this).data("index");
+                0 <= e && (y(e), t.preventDefault());
+              }),
+              "after" === I.nav ? v.append(l) : v.prepend(l),
+              (c = l.find("." + T.navItem))),
+            0 <= h && y(h),
+            v
+          );
+      }
+      (t = {
+        jump: y,
+        next: function () {
+          return y("next");
+        },
+        prev: function () {
+          return y("prev");
+        },
+        play: b,
+        stop: x,
+        pause: w,
+        index: k,
+      }),
+        v.data("methods", t),
+        v.hasClass(T.active) ||
+          (function () {
+            var t;
+            if ((v.css("visibility", "hidden"), k(), p.length <= 1))
+              v.css("visibility", "");
+            else {
+              (t =
+                !!I.style &&
+                "flipster--" + I.style.split(" ").join(" flipster--")),
+                v.addClass(
+                  [
+                    T.main,
+                    M ? "flipster--transform" : " flipster--no-transform",
+                    t,
+                    I.click ? "flipster--click" : "",
+                  ].join(" ")
+                ),
+                I.start &&
+                  (h =
+                    "center" === I.start ? Math.floor(p.length / 2) : I.start),
+                y(h);
+              var e,
+                n,
+                i,
+                a,
+                r,
+                s,
+                o,
+                l,
+                c = v.find("img");
+              if (c.length) {
+                var u = 0;
+                c.on("load", function () {
+                  ++u >= c.length && C();
+                }),
+                  setTimeout(C, 750);
+              } else C();
+              E.on("resize.flipster", L(g, 400)),
+                I.autoplay && b(),
+                I.pauseOnHover &&
+                  f
+                    .on("mouseenter.flipster", function () {
+                      d ? w(!0) : x();
+                    })
+                    .on("mouseleave.flipster", function () {
+                      -1 === d && b();
+                    }),
+                (e = v),
+                I.keyboard &&
+                  ((e[0].tabIndex = 0),
+                  e.on(
+                    "keydown.flipster",
+                    L(function (t) {
+                      var e = t.which;
+                      (37 !== e && 39 !== e) ||
+                        (y(37 === e ? "prev" : "next"), t.preventDefault());
+                    }, 250)
+                  )),
+                (function (t) {
+                  if (I.scrollwheel) {
+                    var e,
+                      n,
+                      i = !1,
+                      a = 0,
+                      r = 0,
+                      s = 0,
+                      o =
+                        /mozilla/.test(navigator.userAgent.toLowerCase()) &&
+                        !/webkit/.test(navigator.userAgent.toLowerCase());
+                    t
+                      .on("mousewheel.flipster wheel.flipster", function () {
+                        i = !0;
+                      })
+                      .on(
+                        "mousewheel.flipster wheel.flipster",
+                        L(function (t) {
+                          clearTimeout(r),
+                            (r = setTimeout(function () {
+                              s = a = 0;
+                            }, 300)),
+                            (t = t.originalEvent),
+                            (s += t.wheelDelta || -1 * (t.deltaY + t.deltaX)),
+                            (Math.abs(s) < 25 && !o) ||
+                              (a++,
+                              n !== (e = 0 < s ? "prev" : "next") && (a = 0),
+                              (n = e),
+                              (a < 6 || a % 3 == 0) && y(e),
+                              (s = 0));
+                        }, 50)
+                      ),
+                      t.on("mousewheel.flipster wheel.flipster", function (t) {
+                        i && (t.preventDefault(), (i = !1));
+                      });
+                  }
+                })(f),
+                (n = f),
+                I.touch &&
+                  n.on({
+                    "touchstart.flipster": function (t) {
+                      (t = t.originalEvent),
+                        (i = t.touches ? t.touches[0].clientX : t.clientX),
+                        (a = t.touches ? t.touches[0].clientY : t.clientY);
+                    },
+                    "touchmove.flipster": function (t) {
+                      (t = t.originalEvent),
+                        (r = t.touches ? t.touches[0].clientX : t.clientX),
+                        (s = t.touches ? t.touches[0].clientY : t.clientY),
+                        (l = r - i),
+                        (o = s - a),
+                        30 < Math.abs(l) &&
+                          Math.abs(o) < 100 &&
+                          t.preventDefault();
+                    },
+                    "touchend.flipster touchcancel.flipster ": function () {
+                      (l = r - i),
+                        (o = s - a),
+                        30 < Math.abs(l) &&
+                          Math.abs(o) < 100 &&
+                          y(0 < l ? "prev" : "next");
+                    },
+                  });
+            }
+          })();
+    });
+  };
+})(jQuery, window);
+
+
+    </script>
+
+<script>
+    $('.carousel').flipster({
+        style: 'carousel',
+        spacing: -0.3, 
+    });
+</script>
+    
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.7.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>
